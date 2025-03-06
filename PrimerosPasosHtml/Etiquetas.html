@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/180px-Apple_logo_black.svg.png" type="image/x-icon">
+    <title>Titulo en pestañas del Navegador</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+   
+</head>
+<body>
+    <header><!--Sirve para generar la cabecera del documento,o incluso también para generar la cabecera de una sección de contenido.-->
+
+        <h1 style="background-color: blue ;color: rgb(255, 255, 255);">Título principal de la Página // Heading 1// SOLO UTILIZAR UN SOLO H1</h1>
+        <h2 style="text-align: center ;">Titulo secundario / /Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!-- Logotipo -->
+        <!-- Barra de navegación -->
+        <nav> <!-- Sirve para generar una barra
+            de navegación, sea la
+            navegación principal o una
+            navegación alternativa.-->
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>  
+        <!-- Barra de búsqueda -->
+        <!-- Enlaces a redes sociales -->
+    </header>
+<hr>
+         
+    <section>
+    <a href="https://www.youtube.com/watch?v=HHkJEz_HdTg" target="_blank">Discurso de Steve Jobs en Stanford (A traves de una ruta o enlace absoluto)</a>
+
+    <p style="font-family: 'Courier New', Courier, monospace;">Steve Jobs decia: <abbr title="era una llamada a mantenerse siempre insatisfecho y a seguir aprendiendo y creciendo como persona."><q>Stay Hungry, Stay Foolish</q></abbr></p>
+
+    <p><abbr title="Comando en latin para escribir un texto aleatorio">Lorem</abbr>, ipsum dolor sit amet <br>consectetur adipisicing elit. Culpa voluptatibus corrupti <br>excepturi, harum id optio beatae modi delectus illo odio <br> vel consectetur pariatur ipsa ratione. Animi explicabo <br>consequuntur laboriosam vitae.</p>
+
+    <pre>Parrafo con formato preformateado:
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Ab facilis aut praesentium beatae architecto, dolorum 
+        facere vitae quod voluptatum corrupti expedita alias 
+        nihil, rem fugiat voluptas et quasi, minima deserunt!
+
+    </pre>
+
+    </section>
+<hr>
+
+    <section> <!--nos permite definir una
+        sección de contenido. Si
+        quisiéramos crear un breve
+        apartado sobre un producto o
+        servicio, esta etiqueta sería
+        una excelente opción-->
+        <h2>Sección Importante</h2>
+        <p>Contenido relevante</p>
+        <h3>Top 3 comidas que me gustan</h3>
+        <ol>
+            <li>Pizza</li>
+            <li>Asado</li>
+            <li>Locro</li>
+        </ol>
+
+            <article> <!--nos permite definir una pieza
+            de contenido independiente. Es
+            decir, contenido que podría
+            funcionar por sí solo sin
+            necesidad de todo lo que lo
+            rodea: un producto, un
+            servicio, una noticia, etcétera.
+            Generalmente los vamos a ver
+            dentro de <section>, pero no
+            es obligatorio-->
+                <h2>Título del Artículo</h2>
+                <p>Contenido del <b>artículo…</b>
+                <a href="archivoInterno.html">Voy a un archivo interno desde una ruta absoluta</a></p>
+           </article>           
+           <article>
+                <h2>Título del Artículo</h2>
+                <p>Contenido del <i>artículo…</i></p>
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="https://concepto.de/wp-content/uploads/2018/09/google-e1537467715310.jpg" width="200px">
+                </a>
+           </article>
+
+           <article>
+                <h2>Título del Artículo</h2>
+                <p>Contenido del <s>artículo…</s></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/180px-Apple_logo_black.svg.png" alt="Logo de Apple" width="100px">
+           </article>
+
+
+       </section>
+
+<hr>
+       <table>
+            <tr>
+                <th>Titulo columna 1</th>
+                <th>Titulo columna 2</th>
+                <th>Titulo columna 3</th>
+                <th colspan="2">Columna fusionada que ocupa 2 espacios</th>
+            </tr>
+            <tr>
+                <td>1er Dato columna 1</td>
+                <td>1er Dato columna 2</td>
+                <td>1er Dato columna 3</td>
+            </tr>
+            <tr>
+                <td>2do Dato columna 1</td>
+                <td>2do Dato columna 2</td>
+                <td>2do Dato columna 3</td>
+            </tr>
+            
+
+       </table>
+
+
+       <footer> <!--nos sirve para generar el pie de
+        página principal del
+        documento o el pie de página
+        de una sección de contenido.
+        Tradicionalmente, aquí van
+        cosas como los derechos
+        reservados y algunos enlaces
+        adicionales de la web.-->
+
+        <address><p>Todos los derechos reservados</p></address>
+        <nav>
+        <ul>  <!--  unorder List -->
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Mapa del sitio</a></li>
+        <li><a href="#">Información legal</a></li>
+        <li><a href="mailto:rfzamboni7@gmail.com">Contacto a traves de mail </a></li>
+        </ul>
+        </nav>
+       </footer>
+       
+</body>
+</html>
