@@ -6,29 +6,35 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form>
+    <form method="post">
+        <h2>Datos Personales:</h2><br>
         <label for="nombre">Nombre</label>
         <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre">
+        <label for="email">Correo</label>
+        <input type="email" name="Email" id="email" placeholder="Ingrese su correo electronico">
         <label for="contraseña">Contraseña</label>
         <input type="password" name="Contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
-        <br>
-
+        <br><hr>
+        <h2>Estados de pago</h2>
         <label for="pagado">Pagado</label>
-        <input type="radio" name="estado" id="pagado">
+        <input type="radio" name="estado del pago" id="pagado" value="pagado">
         <label for="pendiente">Pendiente</label>
-        <input type="radio" name="estado" id="pendiente">
+        <input type="radio" name="estado del pago" id="pendiente" value="pendiente">
         <label for="vencido">Vencido</label>
-        <input type="radio" name="estado" id="vencido">
-        <br>
+        <input type="radio" name="estado del pago" id="vencido" value="vencido">
+        <br><hr>
+        <h2>Tecnologias</h2>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="Tecnologias" placeholder="Ingrese su nombre" id="html" value="HTML">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="Tecnologias" placeholder="Ingrese su nombre" id="css" value="CSS">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="Tecnologias" placeholder="Ingrese su nombre" id="js" value="JS">
+        <br><hr>
 
-        <input type="checkbox" name="Nombre" placeholder="Ingrese su nombre">
-        <input type="checkbox" name="Nombre" placeholder="Ingrese su nombre">
-        <input type="checkbox" name="Nombre" placeholder="Ingrese su nombre">
+        <input type="range" name="Rango" placeholder="Ingrese su Rango de edad" min="1" max="10">
         <br>
-
-        <input type="range" name="Rango" placeholder="Ingrese su Rango de edad">
-        <br>
-        <input type="date" name="Date" placeholder="Ingrese su Fecha de naciemiento">
+        <input type="date" name="Date" placeholder="Ingrese su Fecha de naciemiento" min="1940-01-01" max="2025-03-10">
         <br>
         <textarea name="Comentario" rows="4" cols="50" placeholder="Ingrese una descripcion"></textarea>
         <br>
@@ -37,7 +43,11 @@
             <option value="LA">Los Angeles</option>
             <option value="TOR">Toronto</option>
         </select>
+        <br><hr>
+        <input type="file" name="File" id="file" multiple>
+        <br><hr>
         <button type="submit">Enviar</button>
+        <button type="reset">Limpiar Campos</button>
 
     </form>
     
